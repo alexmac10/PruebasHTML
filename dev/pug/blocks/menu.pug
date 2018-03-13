@@ -1,2 +1,7 @@
 ul
-    li:a(href='algo.php') Item
+    each page in pages
+        if(page == 'home')
+            li: a(href= '/PruebasHtml/public/') #{page}
+        else
+            li: a(href= page + '.php') #{page}
+        
