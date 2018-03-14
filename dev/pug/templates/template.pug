@@ -7,7 +7,23 @@ html
         title #{pageTitle} | #{siteTitle}
         meta(charset='utf-8')
         meta(name='description' content=description)
+        link(rel='stylesheet' href='https://rawgit.com/escueladigital/EDgrid/master/css/ed-grid.min.css')
+        link(rel='stylesheet' href='/PruebasHtml/public/css/styles.css')
+        
     body
-        header
-            img(src='/PruebasHtml/public/img/logo.svg')
-            include ../blocks/menu.pug
+        header.main-header
+            a(href='/PruebasHtml/public/'): img(src='/PruebasHtml/public/img/logo.svg').logo
+            nav.menu 
+                include ../blocks/menu.pug
+        div
+            block banner
+                img(src='/PruebasHtml/public/img/'+ currentPage +'.jpg')
+        main
+            block main
+        aside
+            block aside
+            if(siguenos == true)
+                include ../blocks/siguenos.pug
+        footer
+            block footer
+                p Creativos ABC - Todos los derechos reservados
