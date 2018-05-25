@@ -7,9 +7,11 @@
     <link rel="stylesheet" href="https://rawgit.com/escueladigital/EDgrid/master/css/ed-grid.min.css">
     <link rel="stylesheet" href="/PruebasHtml/public/css/styles.css">
   </head>
-  <body>
-    <header class="main-header"><a href="/PruebasHtml/public/"><img class="logo" src="/PruebasHtml/public/img/logo.svg"></a>
-      <nav class="menu"> 
+  <body>       
+    <header class="main-header">
+      <div class="main-header__logo"><a href="/PruebasHtml/public/"><img class="logo" src="/PruebasHtml/public/img/logo.svg"></a></div>
+      <div class="main-header__fondo"><img src="/PruebasHtml/public/img/inicio.jpg"></div>
+      <nav class="main-menu">
         <ul>
           <li><a href="/PruebasHtml/public/">home</a></li>
           <li><a href="nosotros.php">nosotros</a></li>
@@ -19,10 +21,8 @@
         </ul>
       </nav>
     </header>
-    <div><img src="/PruebasHtml/public/img/inicio.jpg">
-    </div>
     <main>
-      <h1>Bienvenidos</h1>
+      <h1>Bienvenidos a</h1>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 

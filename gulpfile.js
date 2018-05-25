@@ -7,7 +7,7 @@ const browserSync = require('browser-sync');
 const server = browserSync.create();
 
 gulp.task('pug', () => {
-    gulp.src('./dev/pug/*.pug')
+    gulp.src('./dev/pug/pages/*.pug')
             .pipe(pug({
                 pretty: true
             }))

@@ -10,14 +10,14 @@ html
         link(rel='stylesheet' href='https://rawgit.com/escueladigital/EDgrid/master/css/ed-grid.min.css')
         link(rel='stylesheet' href='/PruebasHtml/public/css/styles.css')
         
-    body
+    body        
         header.main-header
-            a(href='/PruebasHtml/public/'): img(src='/PruebasHtml/public/img/logo.svg').logo
-            nav.menu 
-                include ../blocks/menu.pug
-        div
-            block banner
+            .main-header__logo
+                a(href='/PruebasHtml/public/'): img(src='/PruebasHtml/public/img/logo.svg').logo
+            .main-header__fondo
                 img(src='/PruebasHtml/public/img/'+ currentPage +'.jpg')
+            nav.main-menu
+                include ../blocks/menu.pug
         main
             block main
         aside
